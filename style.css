@@ -1,26 +1,18 @@
-
-
-
-
-
-
-
-
-
-
-.container{
+.container {
     /* background: red; */
     background: tomato;
 
 }
-.row{
+
+.row {
     background: green;
     height: 100px;
     margin-bottom: 10px;
 }
-.row div div{
-    color:red;
-    background:white;
+
+.row div div {
+    color: red;
+    background: white;
     margin-bottom: 10px;
     text-align: center;
     width: 70px;
