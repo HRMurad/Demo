@@ -9,6 +9,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1 class="text-center">Calculator</h1>
+    <div class="d-flex gap-5 mx-5">
+      <input id="num1" class="form-control" type="number" />
+      <input id="num2" class="form-control" type="number" />
+    </div>
+    <div class="d-flex justify-content-center py-2">
+      <button id="submit-btn" type="submit" class="btn btn-danger">
+        Submit
+      </button>
+    </div>
+    <h4 class="text-center mt-2 text-primary" id="result-text"></h4>
+
+    <script>
+      const btn = document.getElementById("submit-btn");
+
+      btn.addEventListener("click", () => {
+        const num1 = Number(document.getElementById("num1").value);
+        const num2 = Number(document.getElementById("num2").value);
+        const sum = num1 * num2;
+        document.getElementById(
+          "result-text"
+        ).innerText = `The sum of ${num1} and ${num2} is ${sum}`;
+        console.log(sum);
+      });
+    </script>
+
     <script src="bootstrap.min.js"></script>
     <script src="JS.js"></script>
   </body>
